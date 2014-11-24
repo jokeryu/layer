@@ -667,6 +667,7 @@ Class.pt.callback = function(){
     
     if(that.config.shadeClose){
         $('#xubox_shade'+ that.index).on('click', function(){
+            that.config.close(that.index);
             layer.close(that.index);
         });
     } 
